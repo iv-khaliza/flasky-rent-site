@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <a href='{{ url_for('index') }}'>Index</a>
+        <a href='{{ url_for('login') }}'>Login</a>
+        <a href='{{ url_for('logout') }}'>Logout</a>
+        {% block content %}{% endblock %}
+    </body>
+</html>
